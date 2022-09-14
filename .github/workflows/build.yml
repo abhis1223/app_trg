@@ -16,6 +16,6 @@ jobs:
      run: docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
    - name: Build Docker image
      run: |
-       docker build -t app_test .
-       docker tag app_test abhi1223/app_trg
+       docker build -t app_test:Dockerfile .
+       docker tag app_test:Dockerfile abhi1223/app_trg
        docker push abhi1223/app_trg
