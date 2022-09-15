@@ -7,9 +7,14 @@ app.config.update(
 )
 
 @app.route('/', methods=['GET','POST'])
-def login():
+def index():
     user={"name":"Abhishek"}
     return render_template("index.html", user=user)
+
+@app.route('/', methods=['GET','POST'])
+def login():
+    print(request)
+    return render_template("dashboard.html")
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0")
