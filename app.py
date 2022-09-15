@@ -16,7 +16,7 @@ def login():
     if(request.values['email']=="ab@gmail.com" and request.values['pwd']=="Abhi"):
         return render_template("dashboard.html")
     else:
-        return "<h1>Invalid User</h1>"
+        return "<h1>Invalid User!</h1>"
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0")
