@@ -8,7 +8,7 @@ app.config.update(
 
 @app.route('/', methods=['GET','POST'])
 def login():
-    user={"name":"Abhi"}
+    user={"name":"Abhishek"}
     return render_template("index.html", user=user)
 
 if __name__ == "__main__":
